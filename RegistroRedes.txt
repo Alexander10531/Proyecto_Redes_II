@@ -1,0 +1,26 @@
+Red de Panama
+	*Topologia completa
+Red de Tegucigalpa
+	*Topologia completa
+Red de SPS
+	*Revision de Access Point(Descripcion): Los dispositivos inalambricos se conectan al access 
+	point de la red de tegucilgpa.
+Red de CR-San Jose
+	*Topologia completa
+Red de Guatemala
+	*Topologia completa
+		-La tabla VLSM pide que se conecten 5 impresoras(Preguntar si es necesario las 3 restantes)
+Red de Atlanta
+	*Topoligia completa
+Red de Miami
+
+
+--------------------------------------------------------------------------------------------------------------------
+Revision de donde estan conectadas cada una las computadoras y cada una de las interfaces
+--------------------------------------------------------------------------------------------------------------------
+
+Estandar de interfaces
+Interfaz 12-24 : Computadoras
+Interfaz 1: Servidor 
+Interfaz de 2-11: Dispositivos varios
+(Pendiente de revision)
