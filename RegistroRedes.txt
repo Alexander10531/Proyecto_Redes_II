@@ -24,3 +24,49 @@ Interfaz 12-24 : Computadoras
 Interfaz 1: Servidor 
 Interfaz de 2-11: Dispositivos varios
 (Pendiente de revision)
+
+--------------------------------------------------------------------------------------------------------------------
+Configuracion de routers 
+	MIA-ATL
+		* Configuracion general
+			-No ip domain-lookup
+			-loggin synchronous
+			-Configuracion de direcciones IP's
+			-Hostname
+	ATL-NYC
+		* Configuracion general
+			-No ip domain-lookup
+			-loggin synchronous
+			-Configuracion de direcciones IP's
+			-Hostname
+	GUA-ATL
+		* Configuracion general
+			-No ip domain-lookup
+			-loggin synchronous
+			-Configuracion de direcciones IP's
+			-Hostname
+	GUA-TGU
+		* Configuracion general
+			-No ip domain-lookup
+			-loggin synchronous
+			-Configuracion de direcciones IP's
+			-Hostname
+	TGU-SPS
+		* Configuracion general
+			-No ip domain-lookup
+			-loggin synchronous
+			-Configuracion de direcciones IP's
+			-Hostname
+	TGU-CR
+		* Configuracion general
+			-No ip domain-lookup
+			-loggin synchronous
+			-Configuracion de direcciones IP's
+			-Hostname
+	CR-PAN
+		* Configuracion general
+			-No ip domain-lookup
+			-loggin synchronous
+			-Configuracion de direcciones IP's
+			-Hostname		
+--------------------------------------------------------------------------------------------------------------------
