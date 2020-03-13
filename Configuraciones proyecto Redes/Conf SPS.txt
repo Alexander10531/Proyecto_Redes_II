@@ -1,0 +1,34 @@
+Router(config)#hostname HN-SPS
+HN-SPS(config)#no ip domain-lookup
+HN-SPS(config)#line console 0
+HN-SPS(config-line)#logging synchronous 
+HN-SPS(config-line)#exit
+
+HN-SPS(config)#int se0/0/0
+HN-SPS(config-if)#ip add 189.168.0.9 255.255.255.252
+HN-SPS(config-if)#no shutdown
+
+HN-SPS(config)#int g0/0
+HN-SPS(config-if)#ip add 192.122.10.1 255.255.255.192
+HN-SPS(config-if)#no shutdown
+
+HN-SPS(config-if)#int g0/1
+HN-SPS(config-if)#ip add 192.122.10.65 255.255.255.224
+HN-SPS(config-if)#no shutdown
+
+HN-SPS(config-if)#int g0/2
+HN-SPS(config-if)#ip add 192.122.10.97 255.255.255.240
+HN-SPS(config-if)#no shutdown
+
+HN-SPS(config)#ip dhcp pool E1P1
+HN-SPS(dhcp-config)#network 192.122.10.0 255.255.255.192
+HN-SPS(dhcp-config)#default-router 192.122.10.1
+HN-SPS(dhcp-config)#exit
+HN-SPS(config)#ip dhcp pool E1P2
+HN-SPS(dhcp-config)#network 192.122.10.64 255.255.255.224
+HN-SPS(dhcp-config)#default-router 192.122.10.65
+HN-SPS(dhcp-config)#exit
+HN-SPS(config)#ip dhcp pool E2P1
+HN-SPS(dhcp-config)#network 192.122.10.96 255.255.255.240
+HN-SPS(dhcp-config)#default-router 192.122.10.97
+HN-SPS(dhcp-config)#exit

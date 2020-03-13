@@ -1,0 +1,22 @@
+US-MIA(config)#int se0/0/0
+US-MIA(config-if)#ip add 189.168.0.25 255.255.255.252
+US-MIA(config-if)#no shutdown
+
+US-MIA(config-if)#int g0/0
+US-MIA(config-if)#ip add 192.168.20.1 255.255.255.224
+US-MIA(config-if)#no shutdown
+
+US-MIA(config-if)#int g0/1
+US-MIA(config-if)#ip add 192.168.20.33 255.255.255.224
+US-MIA(config-if)#no shutdown
+
+
+US-MIA(config-if)#exit
+US-MIA(config)#ip dhcp pool E1P1
+US-MIA(dhcp-config)#network 192.168.20.0 255.255.255.224
+US-MIA(dhcp-config)#default-router 192.168.20.1
+US-MIA(dhcp-config)#exit
+US-MIA(config)#ip dhcp pool E1P2
+US-MIA(dhcp-config)#network 192.168.20.32 255.255.255.224
+US-MIA(dhcp-config)#default-router 192.168.20.33
+US-MIA(dhcp-config)#exit

@@ -1,0 +1,20 @@
+US-ATL(config)#int se0/0/0
+US-ATL(config-if)#ip add 189.168.0.17 255.255.255.252
+US-ATL(config-if)#no shutdown
+
+US-ATL(config-if)#int se0/0/1
+US-ATL(config-if)#ip add 189.168.0.26 255.255.255.252
+US-ATL(config-if)#no shutdown
+
+US-ATL(config-if)#int se0/1/0
+US-ATL(config-if)#ip add 189.168.0.22 255.255.255.252
+US-ATL(config-if)#no shutdown
+
+US-ATL(config-if)#int g0/0
+US-ATL(config-if)#ip add 10.10.10.1 255.255.255.248
+US-ATL(config-if)#no shutdown
+
+US-ATL(config-if)#ip dhcp pool E1P1
+US-ATL(dhcp-config)#network 10.10.10.0 255.255.255.248
+US-ATL(dhcp-config)#default-router 10.10.10.1
+US-ATL(dhcp-config)#exit

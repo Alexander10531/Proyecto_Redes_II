@@ -1,0 +1,61 @@
+	Tegucigalpa 
+
+Direccion de red: 172.21.0.0 /16
+
+Edificio 1 = 71 IPs = /25 = 		172.21.0.0-172.21.0.127
+Edificio 1(Nivel 2) = 50 IPs = /26 	172.21.0.128-172.21.0.191
+Edificio 2(Nivel 1) = 36 IPs = /26 	172.21.0.192-172.21.0.255
+
+	San Pedro Sula
+
+Direccion de red: 192.122.10.0
+
+Edificio 1(NIvel 1) = 36 Ip's = /26 	192.122.10.0-192.122.10.63
+Edificio 1(NIvel 2) = 20 Ip's = /27 	192.122.10.64-192.122.10.95 
+Edifici 2 (NIvel 2) = 14 Ip's = /28 	192.122.10.96-192.122.10.111
+
+	Guatemala: 
+
+Dirección de Red: 175.10.1.0
+
+Edificio 1(Nivel 1)= 71 IPs = /25 	175.10.1.0-175.10.1.127
+Edificio 1(Nivel 2)= 50 IPs = /26 	175.10.1.128-175.10.1.191
+ 
+
+	Miami: 
+
+Dirección de Red: 192.168.20.0
+
+Edificio 1 (Nivel 1) = 25 IPs = /27 	192.168.20.0-192.168.20.31
+Edificio 1 (Nivel 2) = 18 IPs = /27 	192.168.20.32-192.168.20.63
+
+	San José Costa Rica:
+
+Dirección de Red: 192.168.30.0 
+
+Edificio 1(Nivel 1)= 25 IPs = /27 	192.168.30.0-192.168.30.31
+Edificio 1(Nivel 2)= 18 IPs = /27 	192.168.30.32-192.168.30.64
+
+	Panamá: 
+
+Dirección de Red: 192.168.40.0
+
+Edificio 1(Nivel 1) = 25 IPs= /27 	192.168.40.0-192.168.40.31
+Edificio 1(Nivel 2) = 18 IPs= /27 	192.168.40.32-192.168.40.63
+
+	Atlanta: 
+
+Dirección de Red: 10.10.10.0
+
+Edificio 1(Nivel 1) = 6 IPs = /29 	10.10.10.0-10.10.10.7
+
+	New York:
+
+Dirección de Red: 192.160.0.0
+
+Edificio 1(Nivel 1) = 71 IPs = /25 	192.160.0.0-192.160.0.127
+Edificio 1(Nivel 2) = 50 IPs = /26 	192.160.0.128-192.160.0.191
+Edificio 2(Nivel 1) = 36 IPs = /26 	192.160.0.192-192.160.0.255
+
+
+ 

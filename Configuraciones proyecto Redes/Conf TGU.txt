@@ -1,0 +1,42 @@
+Router(config)#hostname HN-TGU
+HN-TGU(config)#no ip domain-lookup
+HN-TGU(config)#line console 0
+HN-TGU(config-line)#logging synchronous
+HN-TGU(config-line)#exit
+
+HN-TGU(config)#int se0/0/0
+HN-TGU(config-if)#ip add 189.168.0.5 255.255.255.252
+HN-TGU(config-if)#no shutdown
+
+HN-TGU(config-if)#int se0/0/1
+HN-TGU(config-if)#ip add 189.168.0.10 255.255.255.252
+HN-TGU(config-if)#no shutdown
+
+HN-TGU(config-if)#int se0/1/0
+HN-TGU(config-if)#ip add 189.168.0.14 255.255.255.252
+HN-TGU(config-if)#no shutdown
+
+HN-TGU(config)#int g0/0
+HN-TGU(config-if)#ip add 172.21.0.1 255.255.255.128
+HN-TGU(config-if)#no shutdown
+
+HN-TGU(config-if)#int g0/1
+HN-TGU(config-if)#ip add 172.21.0.129 255.255.255.192
+HN-TGU(config-if)#no shutdown
+
+HN-TGU(config-if)#int g0/2
+HN-TGU(config-if)#ip add 172.21.0.193 255.255.255.192
+HN-TGU(config-if)#no shutdown
+
+HN-TGU(config)#ip dhcp pool E1P1
+HN-TGU(dhcp-config)#network 172.21.0.0 255.255.255.128
+HN-TGU(dhcp-config)#default-router 172.21.0.1
+HN-TGU(dhcp-config)#exit
+HN-TGU(config)#ip dhcp pool E1P2
+HN-TGU(dhcp-config)#network 172.21.0.128 255.255.255.192
+HN-TGU(dhcp-config)#default-router 172.21.0.129
+HN-TGU(dhcp-config)#exit
+HN-TGU(config)#ip dhcp pool E2P1
+HN-TGU(dhcp-config)#network 172.21.0.192 255.255.255.192
+HN-TGU(dhcp-config)#default-router 172.21.0.193
+HN-TGU(dhcp-config)#exit

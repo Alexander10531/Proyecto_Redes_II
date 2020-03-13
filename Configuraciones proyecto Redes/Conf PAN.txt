@@ -1,0 +1,21 @@
+
+PA-PAN(config)#int se0/0/0
+PA-PAN(config-if)#ip add 189.168.0.2 255.255.255.252
+
+PA-PAN(config)#int g0/0
+PA-PAN(config-if)#ip add 192.168.40.1 255.255.255.224
+PA-PAN(config-if)#no shutdown
+
+PA-PAN(config-if)#int g0/1
+PA-PAN(config-if)#ip add 192.168.40.33 255.255.255.224
+PA-PAN(config-if)#no shutdown
+PA-PAN(config-if)#exit
+
+PA-PAN(config)#ip dhcp pool E1P1
+PA-PAN(dhcp-config)#network 192.168.40.0 255.255.255.224
+PA-PAN(dhcp-config)#default-router 192.168.40.1
+PA-PAN(dhcp-config)#exit
+PA-PAN(config)#ip dhcp pool E1P2
+PA-PAN(dhcp-config)#network 192.168.40.32 255.255.255.224
+PA-PAN(dhcp-config)#default-router 192.168.40.33
+PA-PAN(dhcp-config)#exit

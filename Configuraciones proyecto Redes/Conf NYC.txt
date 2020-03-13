@@ -1,0 +1,34 @@
+Router(config)#hostname US-NYC
+US-NYC(config)#no ip domain-lookup
+US-NYC(config)#line console 0
+US-NYC(config-line)#logging synchronous 
+US-NYC(config-line)#exit
+
+US-NYC(config)#int se0/0/0
+US-NYC(config-if)#ip add 189.168.0.21 255.255.255.252
+US-NYC(config-if)#no shutdown
+
+US-NYC(config-if)#int g0/0
+US-NYC(config-if)#ip add 192.160.0.1 255.255.255.128
+US-NYC(config-if)#no shutdown
+
+US-NYC(config-if)#int g0/1
+US-NYC(config-if)#ip add 192.160.0.129 255.255.255.192
+US-NYC(config-if)#no shutdown
+
+US-NYC(config-if)#int g0/2
+US-NYC(config-if)#ip add 192.160.0.193 255.255.255.192
+US-NYC(config-if)#no shutdown
+
+US-NYC(config)#ip dhcp pool E1P1
+US-NYC(dhcp-config)#network 192.160.0.0 255.255.255.128
+US-NYC(dhcp-config)#default-router 192.160.0.1
+US-NYC(dhcp-config)#exit
+US-NYC(config)#ip dhcp pool E1P2
+US-NYC(dhcp-config)#network 192.160.0.128 255.255.255.192
+US-NYC(dhcp-config)#default-router 192.160.0.129
+US-NYC(dhcp-config)#exit
+US-NYC(config)#ip dhcp pool E2P1
+US-NYC(dhcp-config)#network 192.160.0.192 255.255.255.192
+US-NYC(dhcp-config)#default-router 192.160.0.193
+US-NYC(dhcp-config)#exit

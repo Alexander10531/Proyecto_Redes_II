@@ -1,0 +1,25 @@
+GT-GUA(config)#int se0/0/0
+GT-GUA(config-if)#ip add 189.168.0.13 255.255.255.252
+GT-GUA(config-if)#no shutdown
+
+GT-GUA(config-if)#int se0/0/1
+GT-GUA(config-if)#ip add 182.168.0.18 255.255.255.252
+GT-GUA(config-if)#no shutdown
+GT-GUA(config-if)#exit
+
+GT-GUA(config-if)#int g0/0
+GT-GUA(config-if)#ip add 175.10.1.1 255.255.255.128
+GT-GUA(config-if)#no shutdown
+
+GT-GUA(config-if)#int g0/1
+GT-GUA(config-if)#ip add 175.10.1.129 255.255.255.192
+GT-GUA(config-if)#no shutdown
+
+GT-GUA(config)#ip dhcp pool E1P1
+GT-GUA(dhcp-config)#network 175.10.1.0 255.255.255.128
+GT-GUA(dhcp-config)#default-router 175.10.1.1
+GT-GUA(dhcp-config)#exit
+GT-GUA(config)#ip dhcp pool E1P2
+GT-GUA(dhcp-config)#network 175.10.1.128 255.255.255.192
+GT-GUA(dhcp-config)#default-router 175.10.1.129
+GT-GUA(dhcp-config)#exit
