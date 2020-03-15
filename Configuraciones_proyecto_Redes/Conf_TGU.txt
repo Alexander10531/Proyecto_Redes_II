@@ -16,6 +16,10 @@ HN-TGU(config-if)#int se0/1/0
 HN-TGU(config-if)#ip add 189.168.0.14 255.255.255.252
 HN-TGU(config-if)#no shutdown
 
+HN-TGU(config)#int se0/1/1
+HN-TGU(config-if)#ip add 189.168.0.30 255.255.255.252
+HN-TGU(config-if)#no shutdown
+
 HN-TGU(config)#int g0/0
 HN-TGU(config-if)#ip add 172.21.0.1 255.255.255.128
 HN-TGU(config-if)#no shutdown

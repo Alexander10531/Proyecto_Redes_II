@@ -1,0 +1,19 @@
+PAN
+
+PA-PAN(config)#router rip
+PA-PAN(config-router)#version 2
+PA-PAN(config-router)#no auto-summary
+PA-PAN(config-router)#network 192.168.40.0
+PA-PAN(config-router)#network 192.168.40.32
+PA-PAN(config-router)#network 189.168.0.0
+
+CR
+
+CR-SNJ(config)#router rip
+CR-SNJ(config-router)#version 2
+CR-SNJ(config-router)#no auto-summary
+CR-SNJ(config-router)#network 192.168.30.0
+CR-SNJ(config-router)#network 192.168.30.32
+CR-SNJ(config-router)#network 189.168.0.0
+CR-SNJ(config-router)#network 189.168.0.4
+CR-SNJ(config-router)#exit

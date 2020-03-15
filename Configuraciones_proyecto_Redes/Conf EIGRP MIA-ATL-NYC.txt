@@ -1,0 +1,35 @@
+NYC
+
+US-NYC(config)#router eigrp 1
+US-NYC(config-router)#no auto-summary
+US-NYC(config-router)#network 192.160.0.0 0.0.0.127
+US-NYC(config-router)#network 192.160.0.128 0.0.0.63
+US-NYC(config-router)#network 192.160.0.192 0.0.0.63
+US-NYC(config-router)#network 189.168.0.20 0.0.0.3
+US-NYC(config-router)#passive-interface g0/0
+US-NYC(config-router)#passive-interface g0/1
+
+ATL
+
+US-ATL(config)#router eigrp 1
+US-ATL(config-router)#no auto-summary
+US-ATL(config-router)#network 10.10.10.0 0.0.0.7
+US-ATL(config-router)#network 10.10.10.8 0.0.0.7
+US-ATL(config-router)#network 189.168.0.20 0.0.0.3
+US-ATL(config-router)#network 189.168.0.16 0.0.0.3
+US-ATL(config-router)#network 189.168.0.24 0.0.0.3
+US-ATL(config-router)#passive-interface g0/0
+US-ATL(config-router)#passive-interface g0/1
+
+MIA
+
+US-MIA(config)#router eigrp 1
+US-MIA(config-router)#no auto-summary
+US-MIA(config-router)#network 192.168.20.0 0.0.0.31
+US-MIA(config-router)#network 192.168.20.32 0.0.0.31
+US-MIA(config-router)#network 192.168.20.64 0.0.0.3
+US-MIA(config-router)#network 189.168.0.24 0.0.0.3
+US-MIA(config-router)#network 189.168.0.28 0.0.0.3
+US-MIA(config-router)#passive-interface g0/0
+US-MIA(config-router)#passive-interface g0/1
+US-MIA(config-router)#passive-interface g0/2
