@@ -1,0 +1,69 @@
+Configuracion EIGRP
+## Se enlistan las areas desde las que se puede hacer ping entre computadoras
+------------------------------------------------------------------------------------
+Miami 
+	* Atlanta
+	* New York 
+	* Guatemala
+	* Tegucigalpa
+	* San Pedro Sula
+	* Costa Rica
+Atlanta
+	* Miami
+	* New York
+	* Guatemala
+	* Tegucigalpa
+	* San Pedro Sula
+	* Costa Rica
+	* Panama
+New York
+	* Miami
+	* Atlanta
+	* Guatemala
+	* Tegucigalpa
+	* San Pedro Sula
+	* Costa Rica
+	* Panama
+Guatemala
+	* Miami
+	* Atlanta
+	* New York
+	* Tegucigalpa
+	* San Pedro Sula
+	* Costa Rica
+	* Panama
+Tegucigalpa
+	* Miami
+	* Atlanta
+	* Guatemala
+	* New York 
+	* San Pedro Sula
+	* Costa Rica
+	* Panama
+San Pedro Sulta
+	* Miami
+	* Atlanta
+	* Guatemala
+	* New York 
+	* Tegucigalpa
+	* Costa Rica
+	* Panama
+Costa Rica
+	* Miami
+	* Atlanta
+	* Guatemala
+	* New York 
+	* San Pedro Sula
+	* Tegucigalpa
+	* Panama
+Panama
+	* Miami
+	* Atlanta
+	* Guatemala
+	* New York 
+	* San Pedro Sula
+	* Costa Rica
+	* Tegucigalpa
+
+
+	

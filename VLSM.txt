@@ -1,7 +1,7 @@
-	Tegucigalpa 
+Tegucigalpa 
 
 Direccion de red: 172.21.0.0 /16
-
+	
 Edificio 1 = 71 IPs = /25 = 		172.21.0.0-172.21.0.127
 Edificio 1(Nivel 2) = 50 IPs = /26 	172.21.0.128-172.21.0.191
 Edificio 2(Nivel 1) = 36 IPs = /26 	172.21.0.192-172.21.0.255
