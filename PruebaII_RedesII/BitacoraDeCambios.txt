@@ -1,0 +1,7 @@
+Bitacora de Martes 24/3/20
+	* Se realizaron cambios a los nombres de los routers y a sus etiquetas para 
+	que tuviesen conconrdancia con la topologia del documento.
+	* Se cambiaron algunas de las direcciones IP ya sea IPv6 o IPv4 para que 
+	tuviesen concordancia con el documento.	
+	* Finalizacion de la configuracion del router1 de la pagina 4
+	
