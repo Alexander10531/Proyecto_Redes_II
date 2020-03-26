@@ -4,4 +4,9 @@ Bitacora de Martes 24/3/20
 	* Se cambiaron algunas de las direcciones IP ya sea IPv6 o IPv4 para que 
 	tuviesen concordancia con el documento.	
 	* Finalizacion de la configuracion del router1 de la pagina 4
-	
+
+Miercoles 25/03/2020
+parte 4 y 5 terminada
+ 	parte 5 paso 2* no se habilito el servicio http (fallaba el comando)
+	parte 5 paso 2*El navegador de las PC´s no presentan una ventana de seguridad
+	(lo configure pero no se que pasa)
