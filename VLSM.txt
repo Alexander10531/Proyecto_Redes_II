@@ -34,7 +34,7 @@ Edificio 1 (Nivel 2) = 18 IPs = /27 	192.168.20.32-192.168.20.63
 Dirección de Red: 192.168.30.0 
 
 Edificio 1(Nivel 1)= 25 IPs = /27 	192.168.30.0-192.168.30.31
-Edificio 1(Nivel 2)= 18 IPs = /27 	192.168.30.32-192.168.30.64
+Edificio 1(Nivel 2)= 18 IPs = /27 	192.168.30.32-192.168.30.63
 
 	Panamá: 
 
